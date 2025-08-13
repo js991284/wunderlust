@@ -275,7 +275,81 @@
             </dl>
         </section>
 
-        
+        <section id="contact">
+            <h2>Contact Us</h2>
+      
+            <form action="#" method="post">
+              <div>
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" placeholder="Enter first name" required>
+              </div>
+      
+              <div>
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" placeholder="Enter last name" required>
+              </div>
+      
+              <fieldset>
+                <legend>Contact Method <span class="required">*</span></legend>
+      
+                <div>
+                  <input type="radio" id="contactEmail" name="preferredContact" value="Email" required>
+                  <label for="contactEmail">Email</label>
+                </div>
+      
+                <div>
+                  <input type="radio" id="contactText" name="preferredContact" value="Text">
+                  <label for="contactText">Text</label>
+                </div>
+      
+                <div>
+                  <input type="radio" id="contactPhone" name="preferredContact" value="Phone">
+                  <label for="contactPhone">Phone</label>
+                </div>
+              </fieldset>
+      
+              <div>
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="yourmail@gmail.com" autocomplete="email" required>
+              </div>
+      
+              <div>
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="815-123-4567" required>
+              </div>
+      
+              <div>
+                <label for="destination">Destination <span class="required">*</span></label>
+                <select id="destination" name="destination" required>
+                  <option value="">Select a destination</option>
+                  <option>Barcelona</option>
+                  <option>Granada</option>
+                  <option>Ibiza</option>
+                  <option>Madrid</option>
+                  <option>Majorca</option>
+                  <option>Seville</option>
+                  <option>Tenerife</option>
+                  <option>Valencia</option>
+                </select>
+              </div>
+      
+              <div>
+                <label for="travelTime">Travel Time <span class="required">*</span></label>
+                <select id="travelTime" name="travelTime" required>
+                  <option value="">Select a season</option>
+                  <option>Fall</option>
+                  <option>Winter</option>
+                  <option>Spring</option>
+                  <option>Summer</option>
+                  <option>Flexible</option>
+                </select>
+              </div>
+      
+              <div>
+                <button type="submit">Plan My Trip</button>
+              </div>
+            </form>
+        </section>
     </main>
 </body>
 </html>
