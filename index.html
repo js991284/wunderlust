@@ -240,42 +240,42 @@
     </main>
     <footer>
         <section id="contact-us">
-            Contact Us <span id="required">(*required)</span>
-            
+            <h2>Contact Us <span id="required">(*required)</span></h2>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label for="firstName">First Name <span class="required">*</span></label>
+                    <input id="firstName" name="firstName" type="text" placeholder="Walter" required>
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="lastName">Last Name <span class="required">*</span></label>
+                    <input id="lastName" name="lastName" type="text" placeholder="White" required>
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="email">Email<span class="required">*</span></label>
+                    <input id="email" name="email" type="email" placeholder="saymyname@gmail.com" required>
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+				<label for="phone">Phone<span class="required">*</span></label>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="337-123-4567" required>	
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input type="radio" id="contactEmail" name="preferredContact" value="Email" required>
+                        <label for="contactEmail">Email</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input type="radio" id="contactText" name="preferredContact" value="Text">
+                        <label for="contactText">Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input type="radio" id="contactPhone" name="preferredContact" value="Phone">
+                        <label for="contactPhone">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
-                    <legend>Destination<span>*</span></legend>
-                    <select id="select-destination">
+                    <legend>Destination <span class="required">*</span></legend>
+                    <select id="select-destination" name="destination" required>
                         <option>Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
@@ -289,8 +289,8 @@
                     </select>
                 </fieldset>
                 <fieldset id="travelTime">
-                    <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time">
+                    <legend>Travel Time <span class="required">*</span></legend>
+                    <select id="select-travel-time" name="travelTime" required>
                         <option>Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
@@ -299,8 +299,8 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>
-            
+                <input type="submit" id="submit" value="Plan My Trip!">
+            </form>
         </section>
         <section id="legal">
             Legal
