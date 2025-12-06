@@ -158,19 +158,23 @@
                     </div>
                 </section>
                 <section>
-                    <!--Responsive Image for resolution switching
-                        images/carmen-lorenzo-L.png
-                        images/carmen-lorenzo-S.png 404w
-                        images/carmen-lorenzo-M.png 920w
-                        images/carmen-lorenzo-L.png 1280w
-                    -->
+                    <img
+                    src="images/carmen-lorenzo-S.png"
+                    srcset="
+                        images/carmen-lorenzo-S.png 404w,
+                        images/carmen-lorenzo-M.png 920w,
+                        images/carmen-lorenzo-L.png 1280w"
+                    sizes="(min-width:1280px) 320px, (min-width:920px) 50vw, 90vw"
+                    alt="Portrait of Carmen Lorenzo">
                         <div>
-                        Carmen Lorenzo
+                        <h4>Carmen Lorenzo</h4>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Madrid, Spain</dd>
                         </dl>
-                        "Live, laugh, love-- everything you need in Majorca."
+                        <blockquote>
+                            <q>"Live, laugh, love-- everything you need in Majorca."</q>
+                        </blockquote>
                     </div>
                 </section>
             </section>
