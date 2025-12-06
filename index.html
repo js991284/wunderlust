@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   
+    <a class="sr-only" href="#main">Skip to main content</a>
+    <a class="sr-only" href="#plan-your-trip">Skip to plan your trip</a>
+    <a class="sr-only" href="#testimonials">Skip to testimonials</a>
+    <a class="sr-only" href="#about-your-destination">Skip to about your destination</a>
+    <a class="sr-only" href="#contact-us">Skip to contact us</a>   
     <header>
-    <div class="skip-link" >
-    Skip to <a href='#main'>main content</a> or <a href='#plan-your-trip'>plan your trip</a> or <a href='#testimonials'>testimonials</a> or <a href='#about-your-destination'>about your destination</a> or <a href='#contact-us'>Contact us</a>
-    </div>    
         <h1>Destination Majorca</h1>
         <p>Let Wonderlust Travel help you plan the trip of your dreams!</p>
         <p>Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.</p>
@@ -40,16 +41,11 @@
                 <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
                 <div>
                 <!--Responsive Image for Art Direction-->
-                    <picture>
-                    <source media="(min-width: 1280px)" srcset="images/majorca-beach-horizontal-l.jpg 1280w" sizes="1280px">
-                    <source media="(min-width: 920px)" srcset="images/majorca-beach-vertical-m.jpg 920w" sizes="920px">
-                    <img
-                        src="images/majorca-beach-square-s.jpg"
-                        srcset="images/majorca-beach-square-s.jpg 404w"
-                        sizes="(min-width: 1280px) 1280px, (min-width: 920px) 920px, 100vw"
-                        alt="Sunset on the coast of Majorca">
-                    
-                    </picture>
+                <picture>
+                    <source media="(min-width:1280px)" srcset="images/majorca-beach-horizontal-l.jpg"> 
+                    <source media="(min-width:920px)"  srcset="images/majorca-beach-vertical-m.jpg">  
+                    <img src="images/majorca-beach-square-s.jpg" alt="Sunset waves on a Majorca beach"> 
+                </picture>
                     <small>Photo by <a href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlie Firth</a> on <a href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
                     
                 </div>
@@ -98,15 +94,11 @@
                 <h3>Testimonials</h3>
 
                 <section>
-                    <!--Responsive Image for resolution switching-->
                     <img
-                    src="images/miranda-blake-S.png"
-                    srcset="
-                        images/miranda-blake-S.png 404w,
-                        images/miranda-blake-M.png 920w,
-                        images/miranda-blake-L.png 1280w"
-                    sizes="(min-width:1280px) 320px, (min-width:920px) 50vw, 90vw"
-                    alt="Portrait of Miranda Blake">
+                        src="images/miranda-blake-S.png"
+                        srcset="images/miranda-blake-S.png 404w, images/miranda-blake-M.png 920w, images/miranda-blake-L.png 1280w"
+                        sizes="(min-width:1280px) 320px, (min-width:920px) 50vw, 90vw"
+                        alt="Portrait of Miranda Blake">
                         <div>
                         <h4>Miranda Blake</h4>
                         <dl>
@@ -119,14 +111,12 @@
                     </div>
                 </section>
                 <section>
+                    <!--Responsive Image for resolution switching images/max-winter-S.png images/max-winter-S.png 404w images/max-winter-M.png 920w images/max-winter-L.png 1280w -->
                     <img
-                    src="images/max-winter-S.png"
-                    srcset="
-                        images/max-winter-S.png 404w,
-                        images/max-winter-M.png 920w,
-                        images/max-winter-L.png 1280w"
-                    sizes="(min-width:1280px) 320px, (min-width:920px) 50vw, 90vw"
-                    alt="Portrait of Max Winter">
+                        src="images/max-winter-S.png"
+                        srcset="images/max-winter-S.png 404w, images/max-winter-M.png 920w, images/max-winter-L.png 1280w"
+                        sizes="(min-width:1280px) 320px, (min-width:920px) 50vw, 90vw"
+                        alt="Portrait of Max Winter">
                         <div>
                         <h4>Max Winter</h4>
                         <dl>
@@ -140,13 +130,10 @@
                 </section>
                 <section>
                     <img
-                    src="images/ines-villegoes-S.png"
-                    srcset="
-                        images/ines-villegoes-S.png 404w,
-                        images/ines-villegoes-M.png 920w,
-                        images/ines-villegoes-L.png 1280w"
-                    sizes="(min-width:1280px) 320px, (min-width:920px) 50vw, 90vw"
-                    alt="Portrait of Inés Villegoes">
+                        src="images/ines-villegoes-S.png"
+                        srcset="images/ines-villegoes-S.png 404w, images/ines-villegoes-M.png 920w, images/ines-villegoes-L.png 1280w"
+                        sizes="(min-width:1280px) 320px, (min-width:920px) 50vw, 90vw"
+                        alt="Portrait of Inés Villegoes">
                     <div>
                         <h4>Inés Villegoes</h4>
                         <dl>
@@ -160,13 +147,10 @@
                 </section>
                 <section>
                     <img
-                    src="images/carmen-lorenzo-S.png"
-                    srcset="
-                        images/carmen-lorenzo-S.png 404w,
-                        images/carmen-lorenzo-M.png 920w,
-                        images/carmen-lorenzo-L.png 1280w"
-                    sizes="(min-width:1280px) 320px, (min-width:920px) 50vw, 90vw"
-                    alt="Portrait of Carmen Lorenzo">
+                        src="images/carmen-lorenzo-S.png"
+                        srcset="images/carmen-lorenzo-S.png 404w, images/carmen-lorenzo-M.png 920w, images/carmen-lorenzo-L.png 1280w"
+                        sizes="(min-width:1280px) 320px, (min-width:920px) 50vw, 90vw"
+                        alt="Portrait of Carmen Lorenzo">
                         <div>
                         <h4>Carmen Lorenzo</h4>
                         <dl>
@@ -261,15 +245,15 @@
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
-                    <div> 
+                    <div class="form-control"> 
                         <input type="radio" id="contactEmail" name="preferredContact" value="Email" required>
                         <label for="contactEmail">Email</label>
                     </div>
-                    <div>
+                    <div class="form-control">
                         <input type="radio" id="contactText" name="preferredContact" value="Text">
                         <label for="contactText">Text</label>
                     </div>
-                    <div>
+                    <div class="form-control">
                         <input type="radio" id="contactPhone" name="preferredContact" value="Phone">
                         <label for="contactPhone">Phone</label>
                     </div>
